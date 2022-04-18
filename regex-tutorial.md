@@ -2,11 +2,14 @@
 
 Regex Tutorial by Gui Vieira
 
-(additional info here)
+Applying logic to your code
 
 ## Summary
 
-"Regex or regular expression, is a sequence of characters that defines a specific search pattern. When included in code or search algorithms, regular expressions can be used to find certain patterns of characters within a string, or to find and replace a character or sequence of characters within a string..." (additional info here)
+Also known as a "regular expression" is a sequence of characters that specifies a search pattern in a text. 
+
+Basics Concepts to help you better navigate this tutorial:
+
 
 ## Table of Contents
 
@@ -28,13 +31,36 @@ Regex Tutorial by Gui Vieira
 
 ### Anchors
 
+What are Anchors?
+
+Anchors are characters that does not match any specific character, but assert something about the string or the matching process. 
+
+
 Beginning Anchor: "^"
 
-  Matches the beginning of the string, or the beginning of a line if the multiline flag (m) is enabled. This matches a position, not a character.
+  Determines the "location" for the beginning of a string or line 
+
+  Example: Testing if the string "Florida" starts with the letter "F"
+
+  const str = 'Florida';
+  console.log(/^F/.test(str));
+
+  Output: true
+
+
+
 
 End Anchor "$"
 
-  Matches the end of the string, or the end of a line if the multiline flag (m) is enabled. This matches a position, not a character.
+  Determines the "location" for the end of a string or line
+
+  Example: Testing if the string "Florida" ends with the letter "j"
+
+  const str = 'Florida';
+  console.log(/$j/.test(str));
+
+  Outputs: false
+
 
 ### Quantifiers & Alternation
 
