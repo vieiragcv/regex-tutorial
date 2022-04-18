@@ -1,4 +1,4 @@
-# Title 
+# Title
 
 Regex Tutorial by Gui Vieira
 
